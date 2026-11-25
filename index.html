@@ -297,12 +297,12 @@
   </style>
 </head>
 <body>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Potenzial-Scan Lite","url":"https://potenzial-scan.de/","applicationCategory":"BusinessApplication","operatingSystem":"Web","provider":{"@type":"Organization","name":"InsideDynamic GmbH"},"description":"Schnelldiagnose des Automatisierungspotenzials eines Geschäftsprozesses."}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Potenzial-Scan Lite","url":"https://potenzial-scan.de/","applicationCategory":"BusinessApplication","operatingSystem":"Web","provider":{"@type":"Organization","name":"Musterfirma GmbH"},"description":"Schnelldiagnose des Automatisierungspotenzials eines Geschäftsprozesses."}</script>
   <div class="ambient-field" aria-hidden="true"><div class="glow amber"></div><div class="glow sky"></div><div class="glow rose"></div></div>
   <div class="grain" aria-hidden="true"></div>
   <header class="site-head">
     <div class="shell">
-      <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>InsideDynamic GmbH</span></div>
+      <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>Musterfirma GmbH</span></div>
       <div class="head-meta"><span class="head-status"><span class="status-dot"></span> Potenzial-Scan Lite / DE / 01</span></div>
     </div>
   </header>
@@ -398,7 +398,7 @@
             <div class="wizard-step" data-step="5">
               <div class="step-kicker"><span>05 · Ergebnis</span><span>Ergebnis ist bereit</span></div>
               <h2>Ihr Dossier ist fertig. Wohin dürfen wir es senden?</h2><p class="step-intro">Geben Sie Ihre geschäftliche E-Mail-Adresse und Telefonnummer an, um das vollständige Ergebnis zu öffnen. Beide Angaben sind erforderlich; Ihre Einwilligung können Sie jederzeit widerrufen.</p>
-              <div class="gate-card"><div class="form-grid"><div class="field"><label for="email">Geschäftliche E-Mail *</label><input id="email" type="email" name="email" placeholder="anna@unternehmen.de" required></div><div class="field"><label for="phone">Geschäftliche Telefonnummer *</label><input id="phone" type="tel" name="phone" placeholder="+49 30 1234567" required></div></div><label class="consent"><input id="consent" type="checkbox" required><span>Ich willige ein, dass die InsideDynamic GmbH meine eingegebenen Daten zur Erstellung und Zusendung der Bewertung sowie für eine einmalige Kontaktaufnahme zum Ergebnis verarbeitet. Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO. Die Einwilligung kann jederzeit widerrufen werden.</span></label><div class="error" aria-live="polite"></div><button class="btn" type="submit">Mein Dossier öffnen →</button></div>
+              <div class="gate-card"><div class="form-grid"><div class="field"><label for="email">Geschäftliche E-Mail *</label><input id="email" type="email" name="email" placeholder="anna@unternehmen.de" required></div><div class="field"><label for="phone">Geschäftliche Telefonnummer *</label><input id="phone" type="tel" name="phone" placeholder="+49 30 1234567" required></div></div><label class="consent"><input id="consent" type="checkbox" required><span>Ich willige ein, dass die Musterfirma GmbH meine eingegebenen Daten zur Erstellung und Zusendung der Bewertung sowie für eine einmalige Kontaktaufnahme zum Ergebnis verarbeitet. Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO. Die Einwilligung kann jederzeit widerrufen werden.</span></label><div class="error" aria-live="polite"></div><button class="btn" type="submit">Mein Dossier öffnen →</button></div>
               <div class="wizard-actions"><button class="btn secondary" type="button" data-back>← Angaben prüfen</button></div>
             </div>
           </form>
@@ -435,7 +435,7 @@
   </main>
 
   <footer>
-    <div class="shell footer-grid"><div><strong>InsideDynamic GmbH</strong>Potenzial-Scan Lite · Bewertungsprototyp</div><div><strong>Datenschutz und Rechtsgrundlage</strong>Die eingegebenen Kontaktdaten werden auf Grundlage Ihrer Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO verarbeitet. Geben Sie keine personenbezogenen Daten Dritter oder Geschäftsgeheimnisse ein.</div><div><strong>Datenstandort und Lebenszyklus</strong>Die Daten werden in der EU / Deutschland verarbeitet. Kontaktdaten werden bis zum Abschluss der angefragten Kontaktaufnahme oder bis zum Widerruf der Einwilligung gespeichert und anschließend gemäß Löschkonzept gelöscht. Anfrage: datenschutz@insidedynamic.de</div></div>
+    <div class="shell footer-grid"><div><strong>Musterfirma GmbH</strong>Potenzial-Scan Lite · Bewertungsprototyp</div><div><strong>Datenschutz und Rechtsgrundlage</strong>Die eingegebenen Kontaktdaten werden auf Grundlage Ihrer Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO verarbeitet. Geben Sie keine personenbezogenen Daten Dritter oder Geschäftsgeheimnisse ein.</div><div><strong>Datenstandort und Lebenszyklus</strong>Die Daten werden in der EU / Deutschland verarbeitet. Kontaktdaten werden bis zum Abschluss der angefragten Kontaktaufnahme oder bis zum Widerruf der Einwilligung gespeichert und anschließend gemäß Löschkonzept gelöscht. Anfrage: datenschutz@musterfirma.example</div></div>
   </footer>
 
   <script>
@@ -567,7 +567,7 @@
       document.querySelectorAll('[data-next]').forEach(b => b.addEventListener('click', () => { if (validateCurrent()) setStep(step + 1); }));
       document.querySelectorAll('[data-back]').forEach(b => b.addEventListener('click', () => setStep(step === 5 ? 3 : step - 1)));
       form.addEventListener('submit', e => { e.preventDefault(); if (!validateCurrent()) return; populateResults(); showScreen('results'); });
-      document.querySelector('#contactBtn').addEventListener('click', () => { window.location.href = 'mailto:kontakt@insidedynamic.de?subject=Potenzial-Scan%20Lite%20—%20Gespräch'; });
+      document.querySelector('#contactBtn').addEventListener('click', () => { window.location.href = 'mailto:kontakt@musterfirma.example?subject=Potenzial-Scan%20Lite%20—%20Gespräch'; });
       document.querySelector('#pauseAuto').addEventListener('click', () => { clearInterval(timer); document.querySelector('#autoNote').textContent = 'Automatischer Start abgebrochen'; });
       timer = setInterval(() => { seconds -= 1; document.querySelector('#countdown').textContent = seconds; if (seconds <= 0) start(); }, 1000);
     })();

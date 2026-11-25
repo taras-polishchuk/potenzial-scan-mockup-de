@@ -2,7 +2,7 @@
 
 **Single-file HTML mockup** — Potenzial-Scan Lite v5.0 (German Mittelstand).
 
-- **Source:** InsideDynamic GmbH · Codex Mission D, 2026-09-01
+- **Source:** Musterfirma GmbH · Codex Mission D, 2026-09-01
 - **Stack:** Static HTML (no build, no server)
 - **Live URL:** https://taras-polishchuk.github.io/potenzial-scan-mockup-de/
 - **Archive:** `worker-output/MISSION-D-GERMAN-INTEGRATED.html`
